@@ -1,0 +1,13 @@
+{
+  "name": "flight-analyzer",
+  "version": "1.0.0",
+  "description": "Route aircraft finder powered by Claude AI",
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+    "start": "node server/index.js",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
