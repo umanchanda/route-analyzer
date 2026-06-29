@@ -5,7 +5,7 @@
   "scripts": {
     "build": "cd client && npm install && npm run build",
     "start": "node server/index.js",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "cd server && npm install && cd ../client && npm install && npm run build"
   },
   "engines": {
     "node": "20.x"
